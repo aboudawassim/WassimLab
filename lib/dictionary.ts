@@ -94,7 +94,7 @@ export const dictionary = {
     "roleLink": "Learn more",
     "qualification": "National Engineering Degree · Computer Engineering, Software Engineering option · EPI Sousse (2022)",
     "cert": "RBK Docker Crash Course — Certificate of Completion",
-    "disclaimer": "Public examples are illustrative and sanitized; no confidential client data or unverified impact statistics.",
+    "disclaimer": "These examples explain my work. I keep client information private and share only results I can verify.",
     "siteTitle": "WassimLab | Technology & Digital Delivery",
     "stack": "The full stack in one picture",
     "diagram": "Visual process map"
@@ -194,7 +194,7 @@ export const dictionary = {
     "roleLink": "En savoir plus",
     "qualification": "Diplôme national d’ingénieur en informatique · option Génie logiciel · EPI Sousse (2022)",
     "cert": "RBK — Attestation de réussite du cours Docker",
-    "disclaimer": "Exemples illustratifs et anonymisés ; aucune donnée client confidentielle ni statistique non vérifiée.",
+    "disclaimer": "Ces exemples expliquent mon travail. Je protège les informations des clients et ne partage que des résultats vérifiables.",
     "siteTitle": "WassimLab | Technologie et livraison digitale",
     "stack": "Architecture complète en un schéma",
     "diagram": "Schéma visuel du processus"
@@ -294,7 +294,7 @@ export const dictionary = {
     "roleLink": "اعرف المزيد",
     "qualification": "شهادة المهندس الوطنية في هندسة الحاسوب، اختصاص هندسة البرمجيات · EPI سوسة (2022)",
     "cert": "شهادة إتمام دورة Docker من RBK",
-    "disclaimer": "الأمثلة تعليمية ومجهولة البيانات؛ لا ننشر بيانات العملاء السرية أو نتائج غير موثقة.",
+    "disclaimer": "توضح هذه الأمثلة طريقة عملي. أحافظ على سرية معلومات العملاء، ولا أشارك إلا نتائج يمكن التحقق منها.",
     "siteTitle": "WassimLab | التقنية وتنفيذ المشاريع الرقمية",
     "stack": "هندسة التطبيق الكامل في مخطط واحد",
     "diagram": "مخطط بصري للخطوات"
