@@ -34,6 +34,15 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Check Firebase deploy secret
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WASSIMLAB }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "::error::Add FIREBASE_SERVICE_ACCOUNT_WASSIMLAB in repository Actions secrets."
+            exit 1
+          fi
+
       - name: Deploy live site
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
