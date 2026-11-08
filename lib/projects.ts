@@ -28,11 +28,11 @@ export const projectCopy = {
   "fr": {
     "arsolab": [
       "Site d’entreprise technologique · plateforme de livraison · contribution",
-      "Plateforme d’entreprise technologique assistée par IA, couvrant les flux de livraison depuis la demande client jusqu’à la réalisation, ainsi que le recrutement."
+      "Plateforme assistée par l’IA pour une entreprise technologique. Elle suit les projets, de la demande du client à la livraison, et facilite le recrutement."
     ],
     "mergers": [
-      "Plateforme de marché · coordination / analyse / QA",
-      "Suivi prestataire, besoins, workflows administratifs, scénarios de test et recette. Réalisation collective."
+      "Place de marché numérique · coordination / analyse / qualité",
+      "Suivi des fournisseurs, des besoins, des processus administratifs, des tests et de la recette. Projet réalisé en équipe."
     ],
     "qatesty": [
       "Application indépendante · réalisée de bout en bout",
@@ -40,24 +40,24 @@ export const projectCopy = {
     ],
     "prestige": [
       "Site indépendant · réalisé de bout en bout",
-      "Développement du site Prestige TN, interface responsive, parcours clients et déploiement."
+      "Développement du site Prestige TN, avec une interface adaptée aux écrans, des parcours clients et la mise en ligne."
     ],
     "satoricom": [
-      "Services digitaux · coordination",
-      "Co-fondateur d’une activité de services numériques ; suivi clients, prestataires et passation."
+      "Services numériques · coordination",
+      "Co-fondateur d’une activité de services numériques ; suivi des clients, des prestataires et des transmissions."
     ],
     "finance": [
-      "Parcours financiers · contribution frontend",
+      "Services financiers · contribution aux interfaces",
       "Interfaces React/Next.js et intégrations REST pour parcours financiers et éligibilité."
     ]
   },
   "ar": {
     "arsolab": [
       "موقع شركة تقنية · منصة تسليم · مساهمة",
-      "منصة لشركة تقنية مدعومة بالذكاء الاصطناعي تغطي مسارات التسليم من طلب العميل حتى التنفيذ، إضافة إلى التوظيف."
+      "منصة مدعومة بالذكاء الاصطناعي لشركة تقنية. تتابع المشاريع من طلب العميل حتى التسليم، وتدعم عمليات التوظيف."
     ],
     "mergers": [
-      "منصة أعمال رقمية · تنسيق وتحليل واختبار",
+      "سوق رقمي · تنسيق وتحليل واختبار",
       "تابعت المورد والمتطلبات والعمليات الإدارية وسيناريوهات الاختبار وقبول المستخدم. المشروع عمل جماعي."
     ],
     "qatesty": [
@@ -73,8 +73,8 @@ export const projectCopy = {
       "شاركت في تأسيس نشاط خدمات رقمية وتنسيق احتياجات العملاء وتواصل الموردين والتسليم."
     ],
     "finance": [
-      "عمليات مالية · مساهمة Frontend",
-      "تطوير واجهات React/Next.js وتكامل REST لرحلات المنتجات المالية والأهلية."
+      "خدمات مالية · مساهمة في تطوير الواجهات",
+      "تطوير واجهات React/Next.js وربطها بخدمات REST لعرض المنتجات المالية والتحقق من الأهلية."
     ]
   }
 } as const;

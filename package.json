@@ -12,6 +12,7 @@
     "check:visuals": "node scripts/validate-colors.mjs",
     "check:cinematic": "node scripts/validate-cinematic-assets.mjs",
     "check:content": "node scripts/validate-content.mjs",
+    "check:translations": "node scripts/validate-translations.mjs",
     "preview": "node scripts/serve-static.mjs"
   },
   "dependencies": {

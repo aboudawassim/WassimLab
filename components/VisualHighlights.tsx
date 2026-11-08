@@ -9,8 +9,8 @@ import {roleAccent} from '@/components/RoleVisual';
 
 const visualCopy={
  en:{eyebrow:'EIGHT DISCIPLINES • EIGHT VISUAL LANGUAGES',featuredEyebrow:'SELECTED DISCIPLINES • EIGHT VISUAL LANGUAGES',title:'Every specialty has its own shape.',sub:'Explore vivid, illustrated workflows alongside clear, interactive explanations. Select a discipline to see the full image, localized diagram and process steps.',cta:'Explore the workflow',view:'View all eight specialties'},
- fr:{eyebrow:'HUIT DISCIPLINES • HUIT UNIVERS VISUELS',featuredEyebrow:'DISCIPLINES SÉLECTIONNÉES • HUIT UNIVERS VISUELS',title:'Chaque métier possède son propre schéma.',sub:'Découvrez des illustrations de processus, des explications interactives et des diagrammes traduits pour chaque spécialité.',cta:'Explorer le processus',view:'Voir les huit spécialités'},
- ar:{eyebrow:'ثمانية تخصصات • ثمانية أشكال بصرية',featuredEyebrow:'تخصصات مختارة • ثمانية أشكال بصرية',title:'لكل تخصص مخطط بصري مختلف.',sub:'استكشف الرسوم التوضيحية والمسارات التفاعلية والشروح المترجمة لكل تخصص مهني.',cta:'استكشف المخطط',view:'عرض التخصصات الثمانية'}
+ fr:{eyebrow:'HUIT DISCIPLINES • HUIT UNIVERS VISUELS',featuredEyebrow:'DISCIPLINES SÉLECTIONNÉES • HUIT UNIVERS VISUELS',title:'Chaque spécialité a ses propres méthodes.',sub:'Découvrez des étapes illustrées, des explications interactives et des schémas traduits pour chaque spécialité.',cta:'Explorer le processus',view:'Voir les huit spécialités'},
+ ar:{eyebrow:'ثمانية تخصصات • ثمانية أشكال بصرية',featuredEyebrow:'تخصصات مختارة • ثمانية أشكال بصرية',title:'لكل تخصص طريقته ومخططه.',sub:'استكشف مراحل العمل المصوّرة والشروح التفاعلية والمخططات المترجمة لكل تخصص.',cta:'استكشف المخطط',view:'عرض التخصصات الثمانية'}
 } as const;
 const coverHeights:Record<string,number>={
  'project-coordination':870,'business-analysis':1020,'technical-analysis':880,'qa-uat':890,'fullstack':885,'devsecops':885,'it-operations':680,'business-operations':890

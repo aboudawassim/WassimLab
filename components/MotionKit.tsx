@@ -41,10 +41,10 @@ export function MotionAction({children,className=''}:{children:ReactNode;classNa
 }
 
 /** Actual portfolio portrait with pointer-responsive tilt, slow orbital rotation and floating badges. */
-const heroWords:Record<Locale,{labels:string[];footer:string;alt:string;name:string}>={
- en:{labels:['◇ BUSINESS','⌘ ENGINEERING','✓ QUALITY','◈ DELIVERY','⌁ SYSTEMS'],footer:'DELIVERY THINKING',alt:'Professional portrait of Mohamed Wassim Abouda',name:'Mohamed Wassim Abouda'},
- fr:{labels:['◇ MÉTIER','⌘ INGÉNIERIE','✓ QUALITÉ','◈ LIVRAISON','⌁ SYSTÈMES'],footer:'DE L’IDÉE À LA LIVRAISON',alt:'Portrait professionnel de Mohamed Wassim Abouda',name:'Mohamed Wassim Abouda'},
- ar:{labels:['◇ الأعمال','⌘ الهندسة','✓ الجودة','◈ التسليم','⌁ الأنظمة'],footer:'من الفكرة إلى التنفيذ',alt:'صورة مهنية لمحمد وسيم عبودة',name:'محمد وسيم عبودة'}
+const heroWords:Record<Locale,{labels:string[];footer:string;alt:string;name:string;scene:string}>={
+ en:{labels:['◇ BUSINESS','⌘ ENGINEERING','✓ QUALITY','◈ DELIVERY','⌁ SYSTEMS'],footer:'DELIVERY THINKING',alt:'Professional portrait of Mohamed Wassim Abouda',name:'Mohamed Wassim Abouda',scene:'Professional portrait with connected business and engineering themes'},
+ fr:{labels:['◇ MÉTIER','⌘ INGÉNIERIE','✓ QUALITÉ','◈ LIVRAISON','⌁ SYSTÈMES'],footer:'DE L’IDÉE À LA LIVRAISON',alt:'Portrait professionnel de Mohamed Wassim Abouda',name:'Mohamed Wassim Abouda',scene:'Portrait professionnel illustrant les liens entre métier et ingénierie'},
+ ar:{labels:['◇ الأعمال','⌘ الهندسة','✓ الجودة','◈ التسليم','⌁ الأنظمة'],footer:'من الفكرة إلى التنفيذ',alt:'صورة مهنية لمحمد وسيم عبودة',name:'محمد وسيم عبودة',scene:'صورة مهنية توضح الترابط بين الأعمال والهندسة'}
 };
 export function HeroScene({locale}:{locale:Locale}){
  const reduce=useReducedMotion();
@@ -58,7 +58,7 @@ export function HeroScene({locale}:{locale:Locale}){
   rx.set(-y*8);ry.set(x*11);
  },[reduce,rx,ry]);
  const reset=useCallback(()=>{rx.set(0);ry.set(0)},[rx,ry]);
- return <div className="hero-graphic motion-scene" onPointerMove={onMove} onPointerLeave={reset} aria-label="Professional portrait with connected business and engineering orbit">
+ return <div className="hero-graphic motion-scene" onPointerMove={onMove} onPointerLeave={reset} aria-label={words.scene}>
   <motion.span className="hero-orbit orbit-one" aria-hidden="true" animate={reduce?undefined:{rotate:360}} transition={{duration:65,repeat:Infinity,ease:'linear'}}/>
   <motion.span className="hero-orbit orbit-two" aria-hidden="true" animate={reduce?undefined:{rotate:-360}} transition={{duration:49,repeat:Infinity,ease:'linear'}}/>
   <motion.span className="hero-orbit orbit-three" aria-hidden="true" animate={reduce?undefined:{rotate:360}} transition={{duration:85,repeat:Infinity,ease:'linear'}}/>

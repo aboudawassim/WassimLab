@@ -23,23 +23,28 @@ npm run dev
 Open http://localhost:3000/en/ and navigate through the site. For a production build:
 
 ```bash
+npm run check:translations
 npm run check:content
 npm run lint
 npm run build
 ```
 
-The build generates `/out/` for static deployment. **Important:** this environment could not reach the npm registry to install dependencies; this source package has passed syntax and asset validations but has NOT passed an actual `next build`. Run the above commands before deployment and resolve any errors.
+The build generates `/out/` for static deployment. Translation validation checks French and Arabic copy, matching interface keys, and all eight expertise pages.
 
 After a successful build, preview the static export with `npm run preview` (port 4173 by default). `npm start` serves the static `out/` directory; do not use `next start` with `output: export`.
 
 ## Firebase Hosting
 
-This is a **new Next.js project**, not the old HTML-only site. Before overwriting the current Firebase site, back it up and verify the deployment project ID.
+Firebase Hosting serves the static export in `/out/`. Deploy manually with:
 
 ```bash
 npm run build
-firebase deploy --only hosting
+firebase deploy --only hosting --project wassimlab
 ```
+
+### Automatic deployment from GitHub
+
+`.github/workflows/deploy-firebase.yml` builds and deploys to the live Firebase site after each push to `main`. Before it can deploy, add a GitHub Actions secret named `FIREBASE_SERVICE_ACCOUNT_WASSIMLAB` to the `aboudawassim/WassimLab` repository. Store the JSON key for a Google Cloud service account with Firebase Hosting deploy access in that secret; do not commit the key or paste it into source files.
 
 `firebase.json` points to `out/`, not `site/` or `public/`.
 
@@ -153,4 +158,4 @@ The audited release fixes role-stage/deliverable correspondence (all eight disci
 
 Run `npm run check:content` together with the four previous validators. The new validation checks also require every illustrated workflow stage to have exactly one matching typical deliverable.
 
-**The production build, TypeScript typecheck with installed dependencies and live-browser audit are still pending.** No dependency lockfile was generated because registry access is unavailable. Run `npm install`, then commit the generated package-lock.json, and only deploy after `npm run build` and browser smoke tests succeed. See `AUDIT_REPORT.md` for all findings and boundaries.
+The production build and TypeScript check pass. The live site is deployed at https://wassimlab.web.app. GitHub auto-deployment needs the `FIREBASE_SERVICE_ACCOUNT_WASSIMLAB` repository secret described above. See `AUDIT_REPORT.md` for historical audit details.
