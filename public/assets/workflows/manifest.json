@@ -1,0 +1,66 @@
+{
+  "project-coordination": {
+    "file": "/assets/workflows/project-coordination.webp",
+    "width": 1448,
+    "height": 870,
+    "form": "Radial coordination hub",
+    "source_file": "project_management_workflow_hub.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "business-analysis": {
+    "file": "/assets/workflows/business-analysis.webp",
+    "width": 1448,
+    "height": 1020,
+    "form": "Sequential document traceability",
+    "source_file": "business_analysis_need_to_solution.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "technical-analysis": {
+    "file": "/assets/workflows/technical-analysis.webp",
+    "width": 1448,
+    "height": 880,
+    "form": "Connected systems network",
+    "source_file": "technical_systems_architecture_network.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "qa-uat": {
+    "file": "/assets/workflows/qa-uat.webp",
+    "width": 1448,
+    "height": 890,
+    "form": "Quality feedback cycle",
+    "source_file": "qa_uat_quality_assurance_cycle.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "fullstack": {
+    "file": "/assets/workflows/fullstack.webp",
+    "width": 1448,
+    "height": 885,
+    "form": "Layered solution architecture",
+    "source_file": "full_stack_solution_architecture_infographic.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "devsecops": {
+    "file": "/assets/workflows/devsecops.webp",
+    "width": 1448,
+    "height": 885,
+    "form": "Continuous DevSecOps loop",
+    "source_file": "devsecops_secure_delivery_pipeline.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "it-operations": {
+    "file": "/assets/workflows/it-operations.webp",
+    "width": 1448,
+    "height": 680,
+    "form": "Service incident resolution",
+    "source_file": "neon_incident_management_flow_infographic.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  },
+  "business-operations": {
+    "file": "/assets/workflows/business-operations.webp",
+    "width": 1448,
+    "height": 890,
+    "form": "Business operations hub",
+    "source_file": "neon_business_operations_workflow_hub.png",
+    "note": "Conceptual explanatory artwork; not real analytics or proof of a particular implementation"
+  }
+}

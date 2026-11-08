@@ -1,0 +1,1235 @@
+{
+ "project-coordination": {
+  "kind": "hub",
+  "accent": "#8c80ff",
+  "title": [
+   "Delivery governance network",
+   "Réseau de pilotage projet",
+   "شبكة حوكمة التسليم"
+  ],
+  "nodes": [
+   {
+    "key": "coord",
+    "icon": "network",
+    "x": 555,
+    "y": 278,
+    "type": "hub",
+    "label": [
+     "Coordination",
+     "Coordination",
+     "التنسيق"
+    ],
+    "note": [
+     "Owns the plan, decisions, dependencies and escalation path.",
+     "Porte le plan, les décisions, les dépendances et les escalades.",
+     "يتولى الخطة والقرارات والتبعيات ومسار التصعيد."
+    ]
+   },
+   {
+    "key": "business",
+    "icon": "users",
+    "x": 210,
+    "y": 130,
+    "type": "artifact",
+    "label": [
+     "Business goals",
+     "Objectifs métier",
+     "أهداف العمل"
+    ],
+    "note": [
+     "Defines the outcome and success measures the work must serve.",
+     "Définit le résultat attendu et les critères de succès.",
+     "تحدد النتيجة المرجوة ومعايير النجاح."
+    ]
+   },
+   {
+    "key": "plan",
+    "icon": "calendar",
+    "x": 555,
+    "y": 95,
+    "type": "artifact",
+    "label": [
+     "Milestones",
+     "Jalons",
+     "المراحل"
+    ],
+    "note": [
+     "Breaks scope into dated milestones with named owners.",
+     "Découpe le périmètre en jalons datés avec des responsables nommés.",
+     "تقسم النطاق إلى مراحل مؤرخة بمسؤولين محددين."
+    ]
+   },
+   {
+    "key": "vendor",
+    "icon": "layers",
+    "x": 900,
+    "y": 130,
+    "type": "actor",
+    "label": [
+     "Vendor team",
+     "Prestataire",
+     "المورد"
+    ],
+    "note": [
+     "Delivers specialist work and reports progress against agreed dates.",
+     "Livre les travaux spécialisés et rend compte aux dates convenues.",
+     "ينفذ الأعمال المتخصصة ويرفع التقدم وفق المواعيد المتفق عليها."
+    ]
+   },
+   {
+    "key": "qa",
+    "icon": "shield",
+    "x": 900,
+    "y": 425,
+    "type": "actor",
+    "label": [
+     "QA / UAT",
+     "QA / Recette",
+     "الجودة والقبول"
+    ],
+    "note": [
+     "Confirms acceptance evidence before the work is released.",
+     "Confirme les preuves de recette avant la mise à disposition.",
+     "يؤكد أدلة القبول قبل تسليم العمل."
+    ]
+   },
+   {
+    "key": "release",
+    "icon": "rocket",
+    "x": 555,
+    "y": 500,
+    "type": "stage",
+    "label": [
+     "Handover",
+     "Passation",
+     "التسليم"
+    ],
+    "note": [
+     "Transfers ownership, access and open actions to operations.",
+     "Transfère la propriété, les accès et les actions ouvertes à l’exploitation.",
+     "ينقل الملكية والصلاحيات والإجراءات المفتوحة إلى التشغيل."
+    ]
+   },
+   {
+    "key": "risk",
+    "icon": "alert",
+    "x": 210,
+    "y": 425,
+    "type": "artifact",
+    "label": [
+     "Risks & issues",
+     "Risques et incidents",
+     "المخاطر والمشكلات"
+    ],
+    "note": [
+     "Records blockers, impact and the owner who must resolve them.",
+     "Consigne les blocages, leur impact et le responsable de leur résolution.",
+     "يسجل العوائق وأثرها والمسؤول عن حلها."
+    ]
+   },
+   {
+    "key": "scope",
+    "icon": "file",
+    "x": 210,
+    "y": 278,
+    "type": "artifact",
+    "label": [
+     "Scope & change",
+     "Périmètre et changements",
+     "النطاق والتغييرات"
+    ],
+    "note": [
+     "Captures approved changes and their effect on time and cost.",
+     "Consigne les changements approuvés et leur effet sur les délais et les coûts.",
+     "يوثق التغييرات المعتمدة وأثرها على الوقت والتكلفة."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "business",
+    "scope"
+   ],
+   [
+    "scope",
+    "plan"
+   ],
+   [
+    "plan",
+    "coord"
+   ],
+   [
+    "vendor",
+    "coord"
+   ],
+   [
+    "risk",
+    "coord"
+   ],
+   [
+    "coord",
+    "qa"
+   ],
+   [
+    "vendor",
+    "qa"
+   ],
+   [
+    "qa",
+    "release"
+   ],
+   [
+    "coord",
+    "release"
+   ]
+  ]
+ },
+ "business-analysis": {
+  "kind": "flow",
+  "accent": "#8c80ff",
+  "title": [
+   "Requirements traceability",
+   "Traçabilité des exigences",
+   "تتبع المتطلبات"
+  ],
+  "nodes": [
+   {
+    "key": "need",
+    "icon": "target",
+    "x": 160,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "Business need",
+     "Besoin métier",
+     "حاجة العمل"
+    ],
+    "note": [
+     "States the problem, affected users and measurable outcome.",
+     "Énonce le problème, les utilisateurs concernés et le résultat mesurable.",
+     "يحدد المشكلة والمستخدمين المتأثرين والنتيجة القابلة للقياس."
+    ]
+   },
+   {
+    "key": "brd",
+    "icon": "file",
+    "x": 430,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "BRD / Scope",
+     "BRD / Périmètre",
+     "وثيقة BRD"
+    ],
+    "note": [
+     "Fixes scope, assumptions and the decision the project must support.",
+     "Fixe le périmètre, les hypothèses et la décision à éclairer.",
+     "يثبت النطاق والافتراضات والقرار الذي يجب دعمه."
+    ]
+   },
+   {
+    "key": "frd",
+    "icon": "layers",
+    "x": 700,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "FRD / SRS",
+     "FRD / SRS",
+     "وثائق FRD / SRS"
+    ],
+    "note": [
+     "Turns scope into functional and non-functional requirements.",
+     "Transforme le périmètre en exigences fonctionnelles et non fonctionnelles.",
+     "يحول النطاق إلى متطلبات وظيفية وغير وظيفية."
+    ]
+   },
+   {
+    "key": "story",
+    "icon": "list",
+    "x": 960,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "User stories",
+     "User stories",
+     "قصص المستخدم"
+    ],
+    "note": [
+     "Slices requirements into testable increments with acceptance criteria.",
+     "Découpe les exigences en incréments testables avec critères d’acceptation.",
+     "يقسم المتطلبات إلى أجزاء قابلة للاختبار بمعايير قبول."
+    ]
+   },
+   {
+    "key": "test",
+    "icon": "shield",
+    "x": 700,
+    "y": 415,
+    "type": "stage",
+    "label": [
+     "Acceptance",
+     "Recette",
+     "معايير القبول"
+    ],
+    "note": [
+     "Proves each requirement with defined cases and expected results.",
+     "Vérifie chaque exigence par des cas et des résultats attendus.",
+     "يثبت كل متطلب بحالات اختبار ونتائج متوقعة."
+    ]
+   },
+   {
+    "key": "trace",
+    "icon": "network",
+    "x": 430,
+    "y": 415,
+    "type": "artifact",
+    "label": [
+     "Traceability",
+     "Traçabilité",
+     "التتبع"
+    ],
+    "note": [
+     "Links need, requirement, test and decision in one chain.",
+     "Relie le besoin, l’exigence, le test et la décision en une chaîne.",
+     "يربط الاحتياج والمتطلب والاختبار والقرار في سلسلة واحدة."
+    ]
+   },
+   {
+    "key": "feedback",
+    "icon": "repeat",
+    "x": 160,
+    "y": 415,
+    "type": "stage",
+    "label": [
+     "Feedback",
+     "Retour métier",
+     "التعليقات"
+    ],
+    "note": [
+     "Routes review comments back into the requirement baseline.",
+     "Ramène les commentaires de revue vers la base des exigences.",
+     "يعيد ملاحظات المراجعة إلى قاعدة المتطلبات."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "need",
+    "brd"
+   ],
+   [
+    "brd",
+    "frd"
+   ],
+   [
+    "frd",
+    "story"
+   ],
+   [
+    "story",
+    "test"
+   ],
+   [
+    "test",
+    "trace"
+   ],
+   [
+    "trace",
+    "brd"
+   ],
+   [
+    "trace",
+    "feedback"
+   ],
+   [
+    "feedback",
+    "need"
+   ]
+  ]
+ },
+ "technical-analysis": {
+  "kind": "system",
+  "accent": "#57c5ee",
+  "title": [
+   "System integration landscape",
+   "Cartographie des intégrations",
+   "خريطة تكامل الأنظمة"
+  ],
+  "nodes": [
+   {
+    "key": "client",
+    "icon": "monitor",
+    "x": 155,
+    "y": 160,
+    "type": "system",
+    "label": [
+     "Client / Web",
+     "Client / Web",
+     "واجهة المستخدم"
+    ],
+    "note": [
+     "Shows what the user sees and which calls the interface makes.",
+     "Montre ce que voit l’utilisateur et les appels émis par l’interface.",
+     "يوضح ما يراه المستخدم والطلبات التي ترسلها الواجهة."
+    ]
+   },
+   {
+    "key": "gateway",
+    "icon": "network",
+    "x": 435,
+    "y": 160,
+    "type": "system",
+    "label": [
+     "API gateway",
+     "Passerelle API",
+     "بوابة API"
+    ],
+    "note": [
+     "Routes, authenticates and throttles traffic before services.",
+     "Route, authentifie et limite le trafic avant les services.",
+     "يوجه الطلبات ويتحقق من الهوية ويحد من التدفق قبل الخدمات."
+    ]
+   },
+   {
+    "key": "service",
+    "icon": "code",
+    "x": 735,
+    "y": 160,
+    "type": "system",
+    "label": [
+     "Services",
+     "Services",
+     "الخدمات"
+    ],
+    "note": [
+     "Holds business rules and exposes contracts to callers.",
+     "Porte les règles métier et expose les contrats aux appelants.",
+     "يحمل قواعد العمل ويكشف العقود للمستهلكين."
+    ]
+   },
+   {
+    "key": "store",
+    "icon": "database",
+    "x": 980,
+    "y": 340,
+    "type": "system",
+    "label": [
+     "Data store",
+     "Base de données",
+     "قاعدة البيانات"
+    ],
+    "note": [
+     "Keeps data, indexes and retention rules behind the service.",
+     "Conserve les données, les index et les règles de rétention.",
+     "يحفظ البيانات والفهارس وقواعد الاحتفاظ خلف الخدمة."
+    ]
+   },
+   {
+    "key": "auth",
+    "icon": "lock",
+    "x": 435,
+    "y": 430,
+    "type": "system",
+    "label": [
+     "Identity / Auth",
+     "Identité / Auth",
+     "الهوية والدخول"
+    ],
+    "note": [
+     "Issues identity, tokens and permission checks for each call.",
+     "Émet l’identité, les jetons et les contrôles de droits par appel.",
+     "يصدر الهوية والرموز وفحوص الصلاحيات لكل طلب."
+    ]
+   },
+   {
+    "key": "observe",
+    "icon": "activity",
+    "x": 155,
+    "y": 430,
+    "type": "system",
+    "label": [
+     "Logs & events",
+     "Journaux / événements",
+     "السجلات والأحداث"
+    ],
+    "note": [
+     "Collects logs, metrics and traces that explain behaviour.",
+     "Collecte les journaux, métriques et traces qui expliquent le comportement.",
+     "يجمع السجلات والمؤشرات والتتبعات التي تفسر السلوك."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "client",
+    "gateway"
+   ],
+   [
+    "gateway",
+    "service"
+   ],
+   [
+    "service",
+    "store"
+   ],
+   [
+    "gateway",
+    "auth"
+   ],
+   [
+    "service",
+    "observe"
+   ],
+   [
+    "auth",
+    "service"
+   ]
+  ]
+ },
+ "qa-uat": {
+  "kind": "cycle",
+  "accent": "#56d9bf",
+  "title": [
+   "Quality assurance feedback loop",
+   "Boucle qualité et recette",
+   "حلقة ضمان الجودة والقبول"
+  ],
+  "nodes": [
+   {
+    "key": "req",
+    "icon": "file",
+    "x": 165,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "Requirements",
+     "Exigences",
+     "المتطلبات"
+    ],
+    "note": [
+     "Provides the acceptance basis every test must trace to.",
+     "Fournit la base d’acceptation à laquelle chaque test se rattache.",
+     "يوفر أساس القبول الذي يعود إليه كل اختبار."
+    ]
+   },
+   {
+    "key": "cases",
+    "icon": "list",
+    "x": 440,
+    "y": 150,
+    "type": "artifact",
+    "label": [
+     "Test design",
+     "Plan de tests",
+     "تصميم الاختبار"
+    ],
+    "note": [
+     "Designs positive, negative and boundary checks per requirement.",
+     "Conçoit des contrôles positifs, négatifs et limites par exigence.",
+     "يصمم فحوصًا إيجابية وسلبية وحدية لكل متطلب."
+    ]
+   },
+   {
+    "key": "execute",
+    "icon": "play",
+    "x": 735,
+    "y": 150,
+    "type": "stage",
+    "label": [
+     "Execute tests",
+     "Exécution",
+     "تنفيذ الاختبار"
+    ],
+    "note": [
+     "Runs the suite and records evidence for each result.",
+     "Exécute la suite et consigne une preuve pour chaque résultat.",
+     "ينفذ المجموعة ويسجل دليلًا لكل نتيجة."
+    ]
+   },
+   {
+    "key": "defects",
+    "icon": "alert",
+    "x": 950,
+    "y": 415,
+    "type": "artifact",
+    "label": [
+     "Defect log",
+     "Anomalies",
+     "سجل العيوب"
+    ],
+    "note": [
+     "Captures severity, reproduction steps and ownership.",
+     "Consigne la gravité, les étapes de reproduction et le responsable.",
+     "يسجل الخطورة وخطوات إعادة الإنتاج والمسؤول."
+    ]
+   },
+   {
+    "key": "retest",
+    "icon": "repeat",
+    "x": 600,
+    "y": 415,
+    "type": "stage",
+    "label": [
+     "Fix & retest",
+     "Corriger / retester",
+     "الإصلاح وإعادة الاختبار"
+    ],
+    "note": [
+     "Confirms the fix and checks for regression damage.",
+     "Confirme le correctif et vérifie l’absence de régression.",
+     "يؤكد الإصلاح ويتحقق من عدم وجود ارتداد."
+    ]
+   },
+   {
+    "key": "accept",
+    "icon": "shield",
+    "x": 245,
+    "y": 415,
+    "type": "stage",
+    "label": [
+     "UAT sign-off",
+     "Validation UAT",
+     "اعتماد القبول"
+    ],
+    "note": [
+     "Records the business sign-off that closes the cycle.",
+     "Consigne la validation métier qui clôt le cycle.",
+     "يسجل اعتماد العمل الذي يغلق الدورة."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "req",
+    "cases"
+   ],
+   [
+    "cases",
+    "execute"
+   ],
+   [
+    "execute",
+    "defects"
+   ],
+   [
+    "defects",
+    "retest"
+   ],
+   [
+    "retest",
+    "accept"
+   ],
+   [
+    "accept",
+    "req"
+   ]
+  ]
+ },
+ "fullstack": {
+  "kind": "layers",
+  "accent": "#60c5fa",
+  "title": [
+   "End-to-end application architecture",
+   "Architecture applicative complète",
+   "معمارية التطبيق الكاملة"
+  ],
+  "nodes": [
+   {
+    "key": "client",
+    "icon": "monitor",
+    "x": 160,
+    "y": 155,
+    "type": "system",
+    "label": [
+     "Browser / UI",
+     "Navigateur / UI",
+     "المتصفح والواجهة"
+    ],
+    "note": [
+     "Renders the interface and handles user input states.",
+     "Affiche l’interface et gère les états de saisie.",
+     "يعرض الواجهة ويتعامل مع حالات إدخال المستخدم."
+    ]
+   },
+   {
+    "key": "frontend",
+    "icon": "code",
+    "x": 460,
+    "y": 155,
+    "type": "system",
+    "label": [
+     "Next.js / React",
+     "Next.js / React",
+     "Next.js / React"
+    ],
+    "note": [
+     "Builds routes, components and data fetching on the client.",
+     "Construit les routes, composants et chargements de données côté client.",
+     "يبني المسارات والمكونات وجلب البيانات في الواجهة."
+    ]
+   },
+   {
+    "key": "api",
+    "icon": "network",
+    "x": 780,
+    "y": 155,
+    "type": "system",
+    "label": [
+     "Backend / API",
+     "Backend / API",
+     "الخلفية وAPI"
+    ],
+    "note": [
+     "Validates requests, applies rules and returns contracts.",
+     "Valide les requêtes, applique les règles et renvoie les contrats.",
+     "يتحقق من الطلبات ويطبق القواعد ويعيد العقود."
+    ]
+   },
+   {
+    "key": "db",
+    "icon": "database",
+    "x": 985,
+    "y": 415,
+    "type": "system",
+    "label": [
+     "Data layer",
+     "Données",
+     "قاعدة البيانات"
+    ],
+    "note": [
+     "Stores records with schema, indexes and integrity rules.",
+     "Stocke les enregistrements avec schéma, index et règles d’intégrité.",
+     "يخزن السجلات بمخطط وفهارس وقواعد سلامة."
+    ]
+   },
+   {
+    "key": "infra",
+    "icon": "cloud",
+    "x": 625,
+    "y": 420,
+    "type": "system",
+    "label": [
+     "Cloud / CI-CD",
+     "Cloud / CI-CD",
+     "السحابة والنشر"
+    ],
+    "note": [
+     "Builds, deploys and runs the stack with repeatable pipelines.",
+     "Construit, déploie et exploite la pile avec des pipelines reproductibles.",
+     "يبني وينشر ويشغل الحزمة بخطوط إنتاج قابلة للتكرار."
+    ]
+   },
+   {
+    "key": "auth",
+    "icon": "lock",
+    "x": 270,
+    "y": 420,
+    "type": "system",
+    "label": [
+     "Auth / Security",
+     "Auth / Sécurité",
+     "التوثيق والأمان"
+    ],
+    "note": [
+     "Guards every route, service call and data boundary.",
+     "Protège chaque route, appel de service et frontière de données.",
+     "يحمي كل مسار واستدعاء خدمة وحدود بيانات."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "client",
+    "frontend"
+   ],
+   [
+    "frontend",
+    "api"
+   ],
+   [
+    "api",
+    "db"
+   ],
+   [
+    "api",
+    "infra"
+   ],
+   [
+    "auth",
+    "api"
+   ],
+   [
+    "infra",
+    "frontend"
+   ]
+  ]
+ },
+ "devsecops": {
+  "kind": "cycle",
+  "accent": "#b4a2ff",
+  "title": [
+   "Secure delivery pipeline",
+   "Pipeline de livraison sécurisée",
+   "مسار التسليم الآمن"
+  ],
+  "nodes": [
+   {
+    "key": "plan",
+    "icon": "calendar",
+    "x": 165,
+    "y": 155,
+    "type": "stage",
+    "label": [
+     "Plan",
+     "Planifier",
+     "التخطيط"
+    ],
+    "note": [
+     "Defines scope, risk and the checks a change must pass.",
+     "Définit le périmètre, le risque et les contrôles à passer.",
+     "يحدد النطاق والمخاطر والفحوص التي يجب أن يجتازها التغيير."
+    ]
+   },
+   {
+    "key": "code",
+    "icon": "code",
+    "x": 460,
+    "y": 95,
+    "type": "stage",
+    "label": [
+     "Code",
+     "Coder",
+     "البرمجة"
+    ],
+    "note": [
+     "Keeps changes small, reviewed and attributable.",
+     "Garde des changements petits, revus et attribuables.",
+     "يبقي التغييرات صغيرة ومراجعة وقابلة للنسبة."
+    ]
+   },
+   {
+    "key": "build",
+    "icon": "layers",
+    "x": 770,
+    "y": 155,
+    "type": "stage",
+    "label": [
+     "Build",
+     "Compiler",
+     "البناء"
+    ],
+    "note": [
+     "Produces one repeatable artefact from a known commit.",
+     "Produit un artefact reproductible depuis un commit connu.",
+     "ينتج أثرًا واحدًا قابلًا للتكرار من إصدار معروف."
+    ]
+   },
+   {
+    "key": "scan",
+    "icon": "shield",
+    "x": 950,
+    "y": 390,
+    "type": "stage",
+    "label": [
+     "Test / Scan",
+     "Tester / scanner",
+     "الفحص والاختبار"
+    ],
+    "note": [
+     "Tests code, dependencies and images before release.",
+     "Teste le code, les dépendances et les images avant diffusion.",
+     "يفحص الكود والتبعيات والصور قبل الإصدار."
+    ]
+   },
+   {
+    "key": "ship",
+    "icon": "rocket",
+    "x": 625,
+    "y": 465,
+    "type": "stage",
+    "label": [
+     "Deploy",
+     "Déployer",
+     "النشر"
+    ],
+    "note": [
+     "Promotes the artefact with a tested rollback path.",
+     "Promeut l’artefact avec un retour arrière testé.",
+     "يرقي الأثر بمسار تراجع مختبَر."
+    ]
+   },
+   {
+    "key": "monitor",
+    "icon": "activity",
+    "x": 285,
+    "y": 425,
+    "type": "stage",
+    "label": [
+     "Observe",
+     "Surveiller",
+     "المراقبة"
+    ],
+    "note": [
+     "Watches health, cost and error signals after release.",
+     "Surveille la santé, le coût et les erreurs après diffusion.",
+     "يراقب الصحة والتكلفة وإشارات الأخطاء بعد الإصدار."
+    ]
+   },
+   {
+    "key": "security",
+    "icon": "lock",
+    "x": 555,
+    "y": 290,
+    "type": "gate",
+    "label": [
+     "Security gates",
+     "Contrôles sécurité",
+     "بوابات الأمان"
+    ],
+    "note": [
+     "Applies policy gates across code, build and deploy.",
+     "Applique les contrôles de politique au code, au build et au déploiement.",
+     "يطبق بوابات السياسة على الكود والبناء والنشر."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "plan",
+    "code"
+   ],
+   [
+    "code",
+    "build"
+   ],
+   [
+    "build",
+    "scan"
+   ],
+   [
+    "scan",
+    "ship"
+   ],
+   [
+    "ship",
+    "monitor"
+   ],
+   [
+    "monitor",
+    "plan"
+   ],
+   [
+    "security",
+    "code"
+   ],
+   [
+    "security",
+    "scan"
+   ],
+   [
+    "security",
+    "ship"
+   ]
+  ]
+ },
+ "it-operations": {
+  "kind": "flow",
+  "accent": "#64d6cb",
+  "title": [
+   "Incident to resolution",
+   "De l’incident à la résolution",
+   "من البلاغ إلى الحل"
+  ],
+  "nodes": [
+   {
+    "key": "report",
+    "icon": "users",
+    "x": 165,
+    "y": 155,
+    "type": "artifact",
+    "label": [
+     "User report",
+     "Signalement",
+     "بلاغ المستخدم"
+    ],
+    "note": [
+     "Describes the symptom, impact and affected users.",
+     "Décrit le symptôme, l’impact et les utilisateurs touchés.",
+     "يصف العَرَض والأثر والمستخدمين المتأثرين."
+    ]
+   },
+   {
+    "key": "triage",
+    "icon": "list",
+    "x": 450,
+    "y": 155,
+    "type": "stage",
+    "label": [
+     "Triage",
+     "Qualification",
+     "الفرز"
+    ],
+    "note": [
+     "Sets severity, owner and response time for the incident.",
+     "Fixe la gravité, le responsable et le délai de réponse.",
+     "يحدد الخطورة والمسؤول وزمن الاستجابة للحادثة."
+    ]
+   },
+   {
+    "key": "diagnose",
+    "icon": "activity",
+    "x": 760,
+    "y": 155,
+    "type": "stage",
+    "label": [
+     "Diagnostics",
+     "Diagnostic",
+     "التشخيص"
+    ],
+    "note": [
+     "Traces logs, data and dependencies to the failing layer.",
+     "Suit journaux, données et dépendances jusqu’à la couche en échec.",
+     "يتتبع السجلات والبيانات والتبعيات إلى الطبقة المتعطلة."
+    ]
+   },
+   {
+    "key": "fix",
+    "icon": "code",
+    "x": 950,
+    "y": 420,
+    "type": "stage",
+    "label": [
+     "Resolve",
+     "Résolution",
+     "المعالجة"
+    ],
+    "note": [
+     "Applies the smallest safe change with a rollback option.",
+     "Applique le plus petit changement sûr avec retour arrière.",
+     "يطبق أصغر تغيير آمن مع خيار التراجع."
+    ]
+   },
+   {
+    "key": "verify",
+    "icon": "shield",
+    "x": 600,
+    "y": 420,
+    "type": "stage",
+    "label": [
+     "Verify",
+     "Vérification",
+     "التحقق"
+    ],
+    "note": [
+     "Confirms the service works for the reporting user.",
+     "Confirme que le service fonctionne pour l’utilisateur signalant.",
+     "يؤكد أن الخدمة تعمل للمستخدم الذي أبلغ."
+    ]
+   },
+   {
+    "key": "learn",
+    "icon": "file",
+    "x": 265,
+    "y": 420,
+    "type": "artifact",
+    "label": [
+     "Knowledge base",
+     "Base de connaissances",
+     "قاعدة المعرفة"
+    ],
+    "note": [
+     "Writes the cause and fix into the knowledge base.",
+     "Consigne la cause et le correctif dans la base de connaissances.",
+     "يسجل السبب والإصلاح في قاعدة المعرفة."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "report",
+    "triage"
+   ],
+   [
+    "triage",
+    "diagnose"
+   ],
+   [
+    "diagnose",
+    "fix"
+   ],
+   [
+    "fix",
+    "verify"
+   ],
+   [
+    "verify",
+    "learn"
+   ],
+   [
+    "learn",
+    "triage"
+   ]
+  ]
+ },
+ "business-operations": {
+  "kind": "hub",
+  "accent": "#e2a675",
+  "title": [
+   "Client and operations coordination",
+   "Coordination client et opérations",
+   "تنسيق العميل والعمليات"
+  ],
+  "nodes": [
+   {
+    "key": "core",
+    "icon": "network",
+    "x": 550,
+    "y": 280,
+    "type": "hub",
+    "label": [
+     "Delivery office",
+     "Bureau de suivi",
+     "مكتب المتابعة"
+    ],
+    "note": [
+     "Holds schedule, records and client commitments in one place.",
+     "Centralise le planning, les dossiers et les engagements clients.",
+     "يجمع الجدول والسجلات والتزامات العملاء في مكان واحد."
+    ]
+   },
+   {
+    "key": "client",
+    "icon": "users",
+    "x": 190,
+    "y": 130,
+    "type": "actor",
+    "label": [
+     "Client needs",
+     "Besoins client",
+     "احتياجات العميل"
+    ],
+    "note": [
+     "States the request, priority and promised outcome.",
+     "Exprime la demande, la priorité et le résultat promis.",
+     "يحدد الطلب والأولوية والنتيجة الموعودة."
+    ]
+   },
+   {
+    "key": "record",
+    "icon": "file",
+    "x": 550,
+    "y": 100,
+    "type": "artifact",
+    "label": [
+     "Documentation",
+     "Documentation",
+     "التوثيق"
+    ],
+    "note": [
+     "Keeps contracts, invoices and approvals traceable.",
+     "Garde les contrats, factures et validations traçables.",
+     "يحفظ العقود والفواتير والموافقات قابلة للتتبع."
+    ]
+   },
+   {
+    "key": "tasks",
+    "icon": "list",
+    "x": 910,
+    "y": 130,
+    "type": "artifact",
+    "label": [
+     "Action tracking",
+     "Suivi des actions",
+     "متابعة المهام"
+    ],
+    "note": [
+     "Assigns actions, owners and due dates across teams.",
+     "Attribue actions, responsables et échéances entre équipes.",
+     "يوزع الإجراءات والمسؤولين والمواعيد بين الفرق."
+    ]
+   },
+   {
+    "key": "supplier",
+    "icon": "layers",
+    "x": 910,
+    "y": 440,
+    "type": "actor",
+    "label": [
+     "Suppliers",
+     "Fournisseurs",
+     "الموردون"
+    ],
+    "note": [
+     "Tracks orders, delivery dates and quality issues.",
+     "Suit les commandes, les dates de livraison et les écarts qualité.",
+     "يتابع الطلبات ومواعيد التسليم ومشكلات الجودة."
+    ]
+   },
+   {
+    "key": "handover",
+    "icon": "rocket",
+    "x": 550,
+    "y": 500,
+    "type": "stage",
+    "label": [
+     "Handover",
+     "Passation",
+     "التسليم"
+    ],
+    "note": [
+     "Confirms the delivered scope with the client.",
+     "Confirme le périmètre livré avec le client.",
+     "يؤكد النطاق المسلم مع العميل."
+    ]
+   },
+   {
+    "key": "feedback",
+    "icon": "repeat",
+    "x": 190,
+    "y": 440,
+    "type": "stage",
+    "label": [
+     "Follow-up",
+     "Relance",
+     "المتابعة"
+    ],
+    "note": [
+     "Closes the loop with follow-ups and next commitments.",
+     "Boucle avec les relances et les prochains engagements.",
+     "يغلق الحلقة بالمتابعات والالتزامات التالية."
+    ]
+   }
+  ],
+  "edges": [
+   [
+    "client",
+    "core"
+   ],
+   [
+    "record",
+    "core"
+   ],
+   [
+    "core",
+    "tasks"
+   ],
+   [
+    "core",
+    "supplier"
+   ],
+   [
+    "supplier",
+    "handover"
+   ],
+   [
+    "handover",
+    "feedback"
+   ],
+   [
+    "feedback",
+    "core"
+   ]
+  ]
+ }
+}

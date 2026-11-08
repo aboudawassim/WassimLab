@@ -1,0 +1,368 @@
+{
+  "candidate": "Mohamed Wassim Abouda",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-06",
+  "resumes": [
+    {
+      "id": "master",
+      "title": "Master / Multi-Disciplinary CV",
+      "headline": "DIGITAL DELIVERY & SOFTWARE ENGINEERING",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Project Coordination",
+        "Business Analysis",
+        "QA",
+        "Software Engineering"
+      ],
+      "summary": "Computer Engineer with approximately four years of combined experience across IT project coordination, business analysis, QA/UAT and application engineering. Connects stakeholder requirements with technical execution, practical documentation, functional validation and reliable delivery.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_master_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_master_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "it-project-coordinator",
+      "title": "IT Project Coordinator / PMO",
+      "headline": "IT PROJECT COORDINATOR | PMO SUPPORT",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Coordination",
+        "PMO",
+        "Vendor Management"
+      ],
+      "summary": "Computer Engineering professional with delivery experience coordinating software stakeholders, vendors, milestones, action items and UAT. Skilled in documentation, dependency tracking, meeting follow-up, issue escalation and structured handover.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_it_project_coordinator_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_it_project_coordinator_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "business-analyst",
+      "title": "Business Analyst",
+      "headline": "BUSINESS ANALYST | DIGITAL SOLUTIONS",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Business Analysis",
+        "BRD",
+        "User Stories"
+      ],
+      "summary": "Business-focused Computer Engineer translating stakeholder needs into requirements, process workflows, user stories and clear acceptance criteria. Experienced bridging business teams, external developers and QA/UAT for multi-role digital applications.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_business_analyst_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_business_analyst_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "technical-analyst",
+      "title": "Technical / Systems Analyst",
+      "headline": "TECHNICAL ANALYST | SYSTEMS & INTEGRATIONS",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Systems Analysis",
+        "APIs",
+        "Integration"
+      ],
+      "summary": "Technical Analyst and Computer Engineer working across business requirements, web platforms, APIs, application behavior and quality validation. Communicates effectively between functional users and developers to investigate defects and clarify system changes.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_technical_analyst_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_technical_analyst_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "qa-engineer",
+      "title": "QA Engineer / UAT Analyst",
+      "headline": "QA ENGINEER | TESTING & UAT",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Manual QA",
+        "UAT",
+        "Defect Management"
+      ],
+      "summary": "QA-focused Computer Engineer experienced in requirements-based testing, functional and regression checks, test scenarios, defect tracking and stakeholder UAT. Combines software development knowledge with clear reproduction steps and release evidence.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_qa_engineer_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_qa_engineer_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "full-stack-engineer",
+      "title": "Full-Stack Software Engineer",
+      "headline": "FULL-STACK SOFTWARE ENGINEER",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "React",
+        "Next.js",
+        "Node.js"
+      ],
+      "summary": "Computer Engineer building end-to-end web applications with React/Next.js, JavaScript/TypeScript, backend APIs and SQL/NoSQL data services. Delivers practical interfaces and workflows while handling debugging, testing, deployment and stakeholder feedback.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_full_stack_engineer_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_full_stack_engineer_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "frontend-engineer",
+      "title": "Frontend React / Next.js Engineer",
+      "headline": "FRONTEND ENGINEER | REACT / NEXT.JS",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Frontend",
+        "React",
+        "Next.js"
+      ],
+      "summary": "Frontend Engineer with hands-on React and Next.js development across responsive web interfaces, REST API integrations, debugging and functional validation. Comfortable translating product requirements into maintainable, user-friendly experiences.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_frontend_engineer_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_frontend_engineer_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "it-analyst",
+      "title": "IT Analyst / Application Support",
+      "headline": "IT ANALYST | APPLICATION SUPPORT",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "IT Analyst",
+        "Troubleshooting",
+        "Applications"
+      ],
+      "summary": "IT Analyst and Computer Engineer with experience troubleshooting web applications, translating user issues into actionable tickets, coordinating fixes and supporting application rollout. Connects technical investigation with business communication and documentation.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_it_analyst_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_it_analyst_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "product-delivery-coordinator",
+      "title": "Product / Digital Delivery Coordinator",
+      "headline": "PRODUCT & DIGITAL DELIVERY COORDINATOR",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Product Delivery",
+        "Coordination",
+        "BA"
+      ],
+      "summary": "Digital delivery professional and Computer Engineer supporting product discovery, feature requirements, prioritization conversations, vendor coordination, acceptance testing and handovers. Brings a practical engineering lens to product and stakeholder decisions.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_product_delivery_coordinator_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_product_delivery_coordinator_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "it-operations-support",
+      "title": "IT Operations / Service Desk Support",
+      "headline": "IT OPERATIONS | SERVICE DESK SUPPORT",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "IT Operations",
+        "IT Support",
+        "Documentation"
+      ],
+      "summary": "Computer Engineer with experience supporting business applications, issue investigation, user communication and technology operations. Practical background across web systems, account workflows, release support and vendor escalation.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_it_operations_support_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_it_operations_support_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "administration-business-coordinator",
+      "title": "Administrative / Business Support Coordinator",
+      "headline": "ADMINISTRATIVE & BUSINESS COORDINATOR",
+      "language": "en",
+      "category": "Business / Administration",
+      "tags": [
+        "Administration",
+        "Business Support",
+        "Coordination"
+      ],
+      "summary": "Organized business and technology professional with experience in documentation, stakeholder communication, supplier coordination, meeting follow-up and operational issue resolution. Brings structured execution from software and service-delivery environments.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_administration_business_coordinator_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_administration_business_coordinator_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": true,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "administration-partnerships",
+      "title": "Administrative Assistant / Partnerships Support",
+      "headline": "ADMINISTRATION & PARTNERSHIPS COORDINATION",
+      "language": "en",
+      "category": "Business / Administration",
+      "tags": [
+        "Administration",
+        "External Relations",
+        "Partnership Support"
+      ],
+      "summary": "Business coordination professional experienced in client and supplier communication, organized follow-ups, documentation and support for operational projects. Prepared to support administrative workflows and external partnerships using clear professional communication.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_administration_partnerships_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_administration_partnerships_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "technical-client-coordinator",
+      "title": "Technical Client Coordinator",
+      "headline": "TECHNICAL CLIENT & SOLUTIONS COORDINATOR",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Client Solutions",
+        "Technical Coordination",
+        "Account Support"
+      ],
+      "summary": "Computer Engineer with client-facing digital-services and software-delivery experience. Skilled in understanding customer needs, converting issues into clear technical actions, coordinating suppliers and communicating delivery status and resolutions.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_technical_client_coordinator_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_technical_client_coordinator_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "onsite-it-support",
+      "title": "Onsite IT Support Engineer",
+      "headline": "ONSITE IT SUPPORT ENGINEER | APPLICATIONS",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "IT Support",
+        "Troubleshooting",
+        "Applications"
+      ],
+      "summary": "Doha-based Computer Engineer with practical experience investigating website and application issues, supporting users, documenting incidents and coordinating corrective action with developers and outside service providers. Strong software background complements frontline support.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_onsite_it_support_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_onsite_it_support_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "hospitality-it-coordinator",
+      "title": "Hospitality IT Coordinator",
+      "headline": "IT COORDINATOR | HOSPITALITY IT SUPPORT",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "IT Coordination",
+        "Hospitality transferable",
+        "User Support"
+      ],
+      "summary": "IT Coordinator and Computer Engineer with business-facing technology support, incident follow-up, service-provider coordination and web/application operations experience. Brings transferable support and documentation skills to hotel and guest-service technology environments.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_hospitality_it_coordinator_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_hospitality_it_coordinator_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "programme-performance-reporting",
+      "title": "Programme Performance / Reporting Coordinator",
+      "headline": "PROJECT PERFORMANCE & REPORTING COORDINATOR",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Reporting",
+        "Project Controls",
+        "Coordination"
+      ],
+      "summary": "Computer Engineering professional experienced in project follow-up, delivery action logs, status communications, issue tracking and requirements documentation. Supports structured programme reporting with Excel, Jira and a data-aware technical background.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_programme_performance_reporting_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_programme_performance_reporting_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "jira-delivery-reporting",
+      "title": "Jira Delivery Tracking / Project Controls",
+      "headline": "JIRA DELIVERY TRACKING | PROJECT CONTROLS",
+      "language": "en",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Jira",
+        "Project Reporting",
+        "Issue Tracking"
+      ],
+      "summary": "Computer Engineer using Jira-based issue and delivery follow-up to connect stakeholder requests, defects, priorities and release checks. Skilled in documenting actions, monitoring dependencies and reporting work status across business and development teams.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_jira_delivery_reporting_EN.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_jira_delivery_reporting_EN.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "fr-coordinateur-projets-it",
+      "title": "Coordinateur de projets IT (FR)",
+      "headline": "COORDINATEUR DE PROJETS IT | SUIVI DELIVERY",
+      "language": "fr",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Gestion de projet",
+        "Coordination",
+        "Recette"
+      ],
+      "summary": "Ing\u00e9nieur en informatique avec pr\u00e8s de quatre ans d'exp\u00e9rience combin\u00e9e dans le suivi de projets num\u00e9riques, la coordination de prestataires, l'analyse des besoins et la recette fonctionnelle. \u00c0 l'aise \u00e0 l'interface des m\u00e9tiers, du d\u00e9veloppement et des utilisateurs.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_fr_coordinateur_projets_it_FR.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_fr_coordinateur_projets_it_FR.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "fr-business-analyst",
+      "title": "Business Analyst / Analyste fonctionnel (FR)",
+      "headline": "BUSINESS ANALYST | ANALYSTE FONCTIONNEL",
+      "language": "fr",
+      "category": "Technology / Delivery",
+      "tags": [
+        "Analyse m\u00e9tier",
+        "Sp\u00e9cifications",
+        "Recette"
+      ],
+      "summary": "Ing\u00e9nieur informatique sp\u00e9cialis\u00e9 dans la traduction des besoins m\u00e9tier en sp\u00e9cifications fonctionnelles, parcours utilisateurs, user stories et crit\u00e8res d'acceptation. Exp\u00e9rience de coordination entre \u00e9quipes m\u00e9tier, prestataires techniques et recette UAT.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_fr_business_analyst_FR.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_fr_business_analyst_FR.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    },
+    {
+      "id": "fr-ingenieur-fullstack",
+      "title": "Ing\u00e9nieur Full-Stack (FR)",
+      "headline": "ING\u00c9NIEUR LOGICIEL FULL-STACK",
+      "language": "fr",
+      "category": "Technology / Delivery",
+      "tags": [
+        "React",
+        "Next.js",
+        "Node.js"
+      ],
+      "summary": "Ing\u00e9nieur en informatique sp\u00e9cialis\u00e9 dans les applications web full-stack, avec une exp\u00e9rience pratique de React/Next.js, des API, de l'int\u00e9gration de donn\u00e9es, des tests et du d\u00e9ploiement. A r\u00e9alis\u00e9 de bout en bout les projets Qatesty et Prestige TN.",
+      "downloadUrl": "/assets/cv/Mohamed_Wassim_Abouda_CV_fr_ingenieur_fullstack_FR.pdf",
+      "fileName": "Mohamed_Wassim_Abouda_CV_fr_ingenieur_fullstack_FR.pdf",
+      "updatedAt": "2026-11-06",
+      "featured": false,
+      "source": "Profile-based tailored CV; verify before job-specific submission"
+    }
+  ]
+}
