@@ -38,7 +38,7 @@ const copy={
 } satisfies Record<Locale,Record<string,string>>;
 
 export function WorkflowArtwork({slug,locale,title,steps,outputs}:{slug:Slug;locale:Locale;title:string;steps:string[];outputs:string[]}){
- const [mode,setMode]=useState<'visual'|'schema'>('visual');
+ const [mode,setMode]=useState<'visual'|'schema'>(locale==='en'?'visual':'schema');
  const [selected,setSelected]=useState(0);
  const dialogRef=useRef<HTMLDialogElement>(null);
  const reduced=useReducedMotion();

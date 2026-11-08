@@ -131,7 +131,7 @@ export const dictionary = {
     "search": "Rechercher un poste, une compétence ou un CV…",
     "all": "Tous",
     "contactHeading": "Créons une solution utile.",
-    "contactSub": "Ouvert aux postes, collaborations et projets logiciels au Qatar, dans les pays du Golfe, à distance ou avec une relocalisation.",
+    "contactSub": "Ouvert aux postes, collaborations et missions de livraison logicielle au Qatar, dans le GCC, à distance ou avec une relocalisation dans le monde entier.",
     "email": "Me contacter",
     "cta": "Explorer le portfolio",
     "deliverables": "Livrables habituels",

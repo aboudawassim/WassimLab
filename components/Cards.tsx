@@ -3,6 +3,7 @@ import Image from 'next/image';
 import type {Locale} from '@/lib/site';
 import {roles,projects} from '@/lib/site';
 import {dictionary} from '@/lib/dictionary';
+import {uiCopy} from '@/lib/ui-copy';
 import {projectCopy,projectGroups} from '@/lib/projects';
 import {RoleEmblem} from '@/components/icon-set';
 import {RoleVisual} from '@/components/RoleVisual';
@@ -32,7 +33,7 @@ function ProjectCard({project,index,locale,kindLabel}:{project:Project;index:num
   <article className={'project-card '+(!project.image?'text-project':'')}>
    <div className={isPrivate?'project-visual is-private':'project-visual'}>
     {project.image
-     ?<Image src={project.image} alt={isPrivate?`${project.title} — ${g.privateAlt}`:project.title+' product screenshot'} fill sizes="(max-width:800px) 100vw, 50vw" draggable={false} style={{objectFit:'cover',objectPosition:'top'}}/>
+     ?<Image src={project.image} alt={isPrivate?`${project.title} — ${g.privateAlt}`:`${project.title} — ${uiCopy[locale].projectScreenshot}`} fill sizes="(max-width:800px) 100vw, 50vw" draggable={false} style={{objectFit:'cover',objectPosition:'top'}}/>
      :<div className={`project-abstract project-art-${project.id}`}><span className="abstract-circle c1"/><span className="abstract-circle c2"/><span className="project-picto">{project.id==='mergers'?<RoleEmblem slug="project-coordination" size={103}/>:project.id==='prestige'?<RoleEmblem slug="fullstack" size={103}/>:<RoleEmblem slug="technical-analysis" size={103}/>}</span><span className="abstract-title">{project.id==='mergers'?'M&A':project.id==='prestige'?'PRESTIGE':'FIN'}</span></div>}
     {isPrivate&&<span className="project-private-badge">{g.privateLabel}</span>}
     <span className="project-index">{kindLabel} / {pad(index+1)}</span>
@@ -55,7 +56,7 @@ function ProjectRow({project,index,locale,kindLabel,groupLabel}:{project:Project
   <article className="project-row">
    <div className={isPrivate?'project-row-media is-private':'project-row-media'}>
     {project.image
-     ?<Image src={project.image} alt={isPrivate?`${project.title} — ${g.privateAlt}`:project.title+' product screenshot'} fill sizes="(max-width:650px) 100vw, 240px" draggable={false} style={{objectFit:'cover',objectPosition:'top'}}/>
+     ?<Image src={project.image} alt={isPrivate?`${project.title} — ${g.privateAlt}`:`${project.title} — ${uiCopy[locale].projectScreenshot}`} fill sizes="(max-width:650px) 100vw, 240px" draggable={false} style={{objectFit:'cover',objectPosition:'top'}}/>
      :<div className="project-row-abstract"><span>{project.id==='arsolab'?'ARS':project.id==='finance'?'FIN':'M&A'}</span></div>}
     {isPrivate&&<span className="project-private-badge">{g.privateLabel}</span>}
    </div>

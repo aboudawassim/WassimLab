@@ -27,7 +27,6 @@ export default async function Experience({params}:{params:Promise<{locale:Locale
      <span className="eyebrow">EPI · SOUSSE</span>
      <h3>{u.degreeTitle}</h3>
      <p>{t.qualification}</p>
-     <small>{t.disclaimer}</small>
     </div>
    </article></MotionCard>
    <MotionCard><article className="content-panel">

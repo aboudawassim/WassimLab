@@ -60,7 +60,7 @@ export default async function Contact({params}:{params:Promise<{locale:Locale}>}
      <dl className="contact-list">
       <div>
        <dt><DetailIcon name="pin"/>{c.location}</dt>
-       <dd>Doha, Qatar</dd>
+       <dd>{c.locationValue}</dd>
       </div>
       <div>
        <dt><DetailIcon name="mail"/>{c.emailLabel}</dt>
